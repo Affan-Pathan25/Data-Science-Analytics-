@@ -1,0 +1,65 @@
+# Display the first 15 rows of the mtcars dataset.
+data(mtcars)
+head(data,15)
+
+# Find the maximum and minimum value of Sepal. Length from iris.
+data(iris)
+
+names(iris)
+
+min_val <- min(iris$Sepal.Length, na.rm = TRUE)
+max_val <- max(iris$Sepal.Length, na.rm = TRUE)
+
+cat("Min Sepal.Length:", min_val, "\n")
+cat("Max Sepal.Length:", max_val, "\n")
+
+
+# Calculate the mean of the variable mpg in mtcars.
+data(mtcars)
+
+mean_of_cars <- mean(mtcars$mpg)
+
+print(mean_of_cars)
+
+
+# Display the structure of the airquality dataset.
+data(airquality)
+
+str(airquality)
+
+# Check whether the number 100 is greater than 50 in R.
+x <- 100
+y <- 50
+x>y
+
+
+
+
+#Excersize 1 
+# Print a message
+print("Hello, Welcome to R Programming")
+
+# Assign variables
+x <- 25
+y <- 5
+
+# Arithmetic operations
+sum_val <- x + y
+diff_val <- x - y
+prod_val <- x * y
+div_val <- x / y
+
+sum_val
+diff_val
+prod_val
+div_val
+
+# Relational operations
+greater_check <- x > y
+equal_check <- x == y
+
+# Load and explore iris dataset
+data("iris")
+head(iris)
+str(iris)
+summary(iris)
